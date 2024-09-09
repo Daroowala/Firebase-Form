@@ -2,7 +2,7 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
  
   const firebaseConfig = {
     apiKey: "AIzaSyB6uesyXFbo8rDFKcbJj6O3loYSQY8LFow",
@@ -17,7 +17,18 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-  console.log("app=>",app);
+//   console.log("app=>",app);
 
   const auth = getAuth(app);
-  console.log("auth=>",auth);
+//   console.log("auth=>",auth);
+
+
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    
+  } else {
+    
+  }
+});
