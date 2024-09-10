@@ -41,13 +41,14 @@ onAuthStateChanged(auth, (user) => {
     signInWithEmailAndPassword(auth, login_email.value, login_password.value)
     .then((userCredential) => {
       const user = userCredential.user;
+      window.location.href = "interface.html";
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       alert(errorMessage)
     });
-    window.location.href = "interface.html";
+    
   }
 
 
