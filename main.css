@@ -1,0 +1,14 @@
+#main {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px; 
+  }
+  
+  a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    font-size: 18px;
+  }
+  
