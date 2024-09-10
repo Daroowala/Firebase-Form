@@ -17,10 +17,7 @@ const firebaseConfig = {
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
  const analytics = getAnalytics(app);
-//   console.log("app=>",app);
-
  const auth = getAuth(app);
-//   console.log("auth=>",auth);
 
 
 
@@ -43,10 +40,7 @@ onAuthStateChanged(auth, (user) => {
   function login () {
     signInWithEmailAndPassword(auth, login_email.value, login_password.value)
     .then((userCredential) => {
-      // Signed in 
       const user = userCredential.user;
-      console.log("user");
-      // ...
     })
     .catch((error) => {
       const errorCode = error.code;

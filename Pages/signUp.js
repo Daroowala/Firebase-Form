@@ -17,10 +17,7 @@ const firebaseConfig = {
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
  const analytics = getAnalytics(app);
-//   console.log("app=>",app);
-
  const auth = getAuth(app);
-//   console.log("auth=>",auth);
 
 
 
@@ -46,7 +43,6 @@ function createUserAccount() {
     console.log("password=>", signup_password.value);
     createUserWithEmailAndPassword(auth,signup_email.value,signup_password.value)
   .then((userCredential) => {
-    // Signed up 
     const user = userCredential.user;
     console.log("user=>", user)
   })
