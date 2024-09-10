@@ -34,8 +34,8 @@ onAuthStateChanged(auth, (user) => {
 });
 
 
-  const signup_email = document.getElementById("email");
-  const signup_password = document.getElementById("password");
+  const signup_email = document.getElementById("signUp_email");
+  const signup_password = document.getElementById("signUp_password");
   const signup_btn = document.getElementById("signup_btn");
   signup_btn.addEventListener("click", createUserAccount);
 
