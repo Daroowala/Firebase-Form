@@ -47,5 +47,8 @@ onAuthStateChanged(auth, (user) => {
       const errorMessage = error.message;
       alert(errorMessage)
     });
-  
+    window.location.href = "interface.html";
   }
+
+
+ 
