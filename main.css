@@ -1,8 +1,6 @@
 #main {
     background-color: bisque;
-    display: flex;
-    justify-content: center;
-    padding: 0 20px; 
+    /* display: flex; */
   }
   
   a{
@@ -10,5 +8,10 @@
     margin-right: 20px;
     color: black;
     font-size: 18px;
+    /* display: flex; */
   }
-  
+   h1{
+    display: flex;
+    justify-content: center;
+    color: green;
+   }
