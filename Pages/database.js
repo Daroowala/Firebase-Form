@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -16,4 +16,20 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
   const db = getFirestore(app);
-  console.log("app=>", db)
+  const nameCollection = collection(db, "name");
+    
+  addDataToDb();
+  async function addDataToDb() {
+     try {
+    const docRef = await addDoc(nameCollection,{
+        user: "Rehan",
+        password: 123456,
+        email:  "rehan@gmail.com",
+        
+
+    });
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+  
+}
