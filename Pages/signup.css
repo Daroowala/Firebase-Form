@@ -1,0 +1,30 @@
+#container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+ 
+#main{
+    border: 2px solid black;
+    width: 350px;
+    height: 300px;
+    margin-left: 350px;
+    background-color: rgb(160, 212, 245);
+    border-radius: 30px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+}
+input{
+    height: 20px;
+}
+#signup_btn{
+    background-color: #4CAF50;
+    width: 110px;
+    height: 40px;
+    font-size: large;
+    font-weight: 600;
+}

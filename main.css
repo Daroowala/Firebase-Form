@@ -1,6 +1,16 @@
+
 #main {
     background-color: bisque;
-    /* display: flex; */
+    min-height: 250px;
+    box-shadow: 5px -4px 35px rgb(3, 3, 3);
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Kanit", sans-serif;
+    position: absolute;
+    left: 350px;
+    border: 2px solid black;
   }
   
   a{
